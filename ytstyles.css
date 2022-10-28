@@ -42,13 +42,15 @@ p {
 
 .video-info {
   display: inline-block;
-  width: 200px;
+  width: 245px;
+  background-color: gray;
 }
 
 .channel-picture {
   display: inline-block;
   width: 50px;
   vertical-align: top;
+  background-color: gray;
 }
 
 .profile-picture {

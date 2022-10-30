@@ -7,6 +7,18 @@ p {
 
 body {
   margin: 0;
+  padding-top: 80px;
+  padding-left: 80px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+  background-color: white;
+  width: 72px;
 }
 
 /* HEADER */
@@ -15,6 +27,15 @@ body {
   flex-direction: row;
   justify-content: space-between;
   height: 55px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(192, 192, 192);
 }
 
 .left-section {

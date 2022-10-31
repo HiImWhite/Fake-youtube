@@ -36,6 +36,7 @@ body {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: rgb(192, 192, 192);
+  z-index: 10;
 }
 
 .left-section {
@@ -137,6 +138,25 @@ body {
   height: 24px;
 }
 
+.notifications-icon-container {
+  position: relative;
+}
+
+.notifications-count {
+  position: absolute;
+  top: -5px;
+  right: -4px;
+  background-color: rgb(134, 4, 4);
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}
+
 .current-user-picture {
   height: 32px;
   border-radius: 16px;
@@ -178,13 +198,28 @@ body {
   border-radius: 50px;
 }
 
-.thumbnail-row {
-  margin-bottom: 12px;
-}
-
 .video-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 40px;
+}
+
+.thumbnail-row {
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.video-time {
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+  opacity: 0.85;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
 }

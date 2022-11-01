@@ -8,7 +8,9 @@ p {
 body {
   margin: 0;
   padding-top: 80px;
-  padding-left: 80px;
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color: rgb(240, 240, 240);
 }
 
 /* SIDEBAR */
@@ -111,6 +113,25 @@ body {
   border-color: rgb(192, 192, 192);
   margin-left: -1px;
   margin-right: 10px;
+
+  position: relative;
+}
+
+.search-button .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  bottom: -32px;
+  opacity: 0;
+  transition: opacity 0.15;
+  pointer-events: none;
+}
+
+.search-button:hover .tooltip {
+  opacity: 0.9;
 }
 
 .search-button:active {
@@ -207,7 +228,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .video-info-grid {
@@ -215,11 +236,8 @@ body {
   grid-template-columns: 50px 1fr;
 }
 
-.channel-picture {
-}
-
 .profile-picture {
-  width: 40px;
+  width: 36px;
   border-radius: 50px;
 }
 
@@ -231,7 +249,7 @@ body {
 }
 
 .thumbnail-row {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   position: relative;
 }
 
